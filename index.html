@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a class="navbar-brand" href="#">Instagram</a>
+                </div>
+
+                <div class="d-flex pe-3">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+
+                    <div class="me-2">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Caption:</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Add the caption of your post here</label>
+                                            <button type="button" class="btn btn-light"><i
+                                                    class="fa-solid fa-camera"></i></button>
+                                            <button type="button" class="btn btn-light"> <i
+                                                    class="fa-solid fa-location-dot"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-center">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                                <p class="text-danger text-center">Log Out</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--BOTONES DEL CENTRO-->
+        <div class="d-flex justify-content-center pt-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                            class="fa-solid fa-tablet-button"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                            class="fa-solid fa-mobile-button"></i></button>
+                </li>
+            </ul>
+        </div>
+        <!--CONTENIDO NAV&TAB-->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <!--Primer boton-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img src="https://i.pinimg.com/564x/c7/00/01/c70001f7945256b46a6ca99d7abf5251.jpg">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img src="https://elaragueno.com.ve/wp-content/uploads/2022/04/basilica.jpg">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img src="https://i.pinimg.com/originals/6f/d7/32/6fd73271316eb2b30dec81ad31ef7d56.jpg">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img src="https://s0.wklcdn.com/image_82/2485594/33387218/21509595.700x525.jpg">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img
+                                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/7f/a9/c2/laguna-de-mucubaji-magica.jpg?w=700&h=500&s=1">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img src="https://images.mnstatic.com/4a/81/4a81f477ba955088f76bfc2f9d556d62.jpg">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img src="https://www.orgbluewater.com/wp-content/uploads/2021/10/DJI_0168.jpg">
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img
+                                    src="https://diariolavoz.net/wp-content/uploads/2013/07/ubicacion-medanos-de-coro.jpg">
+                            </div>
+                        </div>
+                        <div class="col-4  col-sm-12 col-md-6 col-lg-4">
+                            <div class="ratio ratio-1x1 m-1 img-fluid">
+                                <img
+                                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/17/41/a5/parque-nacional-el-avila.jpg?w=1200&h=-1&s=1">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Segundo Boton-->
+            <div class="tab-pane fade d-flex justify-content-center" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="row w-50">
+                    <div class="col-12 pt-3">
+                        <div class="card">
+                            <div class="card-title d-flex justify-content-between">
+                               <div><h4>El Puente sobre el lago de Maracaibo</h4></div>
+                                <div><p>10/2023</p></div>
+
+                            </div>
+                            <img class="foto1"
+                                src="https://i.pinimg.com/564x/c7/00/01/c70001f7945256b46a6ca99d7abf5251.jpg">
+                            <div class="card-body">
+                                <h6>22 likes</h6>
+                                <p>Puente General Rafael Urdaneta</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--segundo card-->
+                    <div class="col-12 pt-3">
+                        <div class="card">
+                            <div class="card-title d-flex justify-content-between">
+                               <div><h4>Pico Espejo, Estado Mérida, Venezuela</h4></div>
+                                <div><p>11/2023</p></div>
+                            </div>
+                            <img class="foto2"
+                                src="https://s0.wklcdn.com/image_82/2485594/33387218/21509595.700x525.jpg">
+                            <div class="card-body">
+                                <h6>80 likes</h6>
+                                <p>Pico Espejo ubicado en la sierra nevada de la
+                                    cordillera
+                                    andina</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tercer Card-->
+                    <div class="col-12 pt-3">
+                        <div class="card">
+                            <div class="card-title d-flex justify-content-between">
+                            <div><h4>El Avila, Oficialmente Waraira Repano, Caracas, Venezuela.</h4></div>
+                                <div><p>11/2023</p></div>
+                            </div>
+                            <img class="foto3"
+                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/17/41/a5/parque-nacional-el-avila.jpg?w=1200&h=-1&s=1">
+                            <div class="card-body">
+                                <h6>5000 likes</h6>
+                                <p>Es un parque nacional localizado en la Cadena del
+                                    Litoral
+                                    dentro de la cordillera de la Costa, en el centro-norte de
+                                    Venezuela.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
+</body>
+
+</html>
